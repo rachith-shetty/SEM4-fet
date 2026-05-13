@@ -1,71 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Front End Lab Portfolio</title>
-    <style>
-        .project-card {
-            border: 1px solid #ddd;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 8px;
-            width: 80%;
-        }
-        .btn-github {
-            width: 50%;
-            padding: 10px;
-            cursor: pointer;
-            background: rgb(0, 0, 0);
-            color: white;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            display: inline-block;
-            text-align: center;
-        }
-    </style>
+    <title>Project Gallery Card</title>
 </head>
 <body>
 
-    <h1>My Assignment Gallery</h1>
+    <h1>The img screenshot</h1>
 
-    <div class="project-card">
-        <h3>Project Title: Portfolio Website</h3>
-        <img src="./images/repo.jpg" alt="Project Screenshot" style="width:50%; border-radius:8px; display:block;">
-        <p>A personal portfolio website built using HTML, CSS, and JavaScript to showcase projects and skills.</p>
-        <a href="https://github.com/your-username/repo" target="_blank">
-            <button class="btn-github">View Source on GitHub</button>
-        </a>
-    </div>
-
-    <div class="project-card">
-        <h3>Assignment: Skill Matrix</h3>
+    <div style="border: 1px solid #ccc; padding: 20px; border-radius: 8px; width: fit-content;">
         
-        <p><strong>Technical Proficiency:</strong></p>
-        <ul>
-            <li>Front-End Development
-                <ul>
-                    <li>HTML5 (Lists, Tables, Forms)</li>
-                    <li>CSS3 (Flexbox, Transitions)</li>
-                    <li>JavaScript (DOM Manipulation)</li>
-                </ul>
-            </li>
-            <li>Back-End Development
-                <ul>
-                    <li>Node.js</li>
-                    <li>Python/Django</li>
-                </ul>
-            </li>
-        </ul>
+        <img src="./images/repo.jpg" 
+             alt="Project Screenshot" 
+             style="width: 50%; border-radius: 8px; display: block;" 
+             width="300" 
+             height="300">
 
-        <p><strong>Resource Preview (Frame Tag):</strong></p>
-        <iframe src="skills_preview.html" width="100%" height="200px" title="Skill Details">
-            Your browser does not support iframes.
-        </iframe>
+        <h3>Project Title</h3>
 
-        <br><br>
-        <a href="https://github.com/your-username/skill-matrix" target="_blank">
-            <button class="btn-github">View Skill Matrix Code</button>
+        <p>
+            A personal portfolio website built using HTML, CSS, and JavaScript 
+            to showcase projects and skills.
+        </p>
+
+        <a href="https://github.com/4mt24cs149bit/sem4-fet" target="_blank" style="text-decoration: none;">
+            <button style="width: 50%; padding: 10px; cursor: pointer; background: rgb(0, 0, 0); color: white; border: none; border-radius: 8px;">
+                View source on GitHub
+            </button>
         </a>
+
     </div>
 
 </body>
