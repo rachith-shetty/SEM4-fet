@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Z-Index Usage Demo</title>
+
+    <style>
+        body {
+            position: relative;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            color: white;
+            font-size: 25px;
+            text-align: center;
+            line-height: 200px;
+            border-radius: 10px;
+        }
+
+        #box1 {
+            background-color: red;
+            top: 220px;
+            left: 300px;
+            z-index: 1;
+        }
+
+        #box2 {
+            background-color: blue;
+            top: 120px;
+            left: 420px;
+            z-index: 2;
+        }
+    </style>
+
+    <script>
+
+        function bringRedFront() {
+            document.getElementById("box1").style.zIndex = "3";
+            document.getElementById("box2").style.zIndex = "1";
+        }
+
+        function bringBlueFront() {
+            document.getElementById("box2").style.zIndex = "3";
+            document.getElementById("box1").style.zIndex = "1";
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <h1>Manipulating CSS with JavaScript</h1>
+
+    <button onclick="bringRedFront()">
+        Bring Red Box to Front
+    </button>
+
+    <button onclick="bringBlueFront()">
+        Bring Blue Box to Front
+    </button>
+
+    <div id="box1" class="box">
+        Box 1
+    </div>
+
+    <div id="box2" class="box">
+        Box 2
+    </div>
+
+</body>
+</html>

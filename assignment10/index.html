@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course Selection Form</title>
+
+    <script>
+        function showCourse() {
+            let course = document.getElementById("course").value;
+
+            document.getElementById("courseResult").innerHTML =
+                "Selected Course: " + course;
+        }
+
+        window.onload = function () {
+
+            document.getElementById("subject").addEventListener("change", function () {
+
+                let subject = this.value;
+
+                document.getElementById("subjectResult").innerHTML =
+                    "Selected Subject: " + subject;
+            });
+
+        };
+    </script>
+</head>
+
+<body bgcolor="lightblue">
+
+    <h1 align="center">Course Registration Form</h1>
+
+    <hr>
+
+    <h2>Select Your Course</h2>
+
+    <select id="course" onchange="showCourse()">
+        <option>Select Course</option>
+        <option>BCA</option>
+        <option>BSc</option>
+        <option>BCom</option>
+        <option>BE</option>
+    </select>
+
+    <p id="courseResult"></p>
+
+    <hr>
+
+    <h2>Select Your Subject</h2>
+
+    <select id="subject" size="5">
+        <option>Mathematics</option>
+        <option>Physics</option>
+        <option>Computer Science</option>
+        <option>Electronics</option>
+        <option>Chemistry</option>
+    </select>
+
+    <p id="subjectResult"></p>
+
+</body>
+</html>
