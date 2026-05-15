@@ -1,26 +1,138 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <ol>
-      <li> FRONTEND  DEVELOPMENT</li>
-      <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>Javascript</li>
-      </ul>
-      <li>STYLING &FRAMEWORK</li>
-      <ul>
-        <li>BOOTSTRAP</li>
-        <li>TAILWIND CSS</li>
-      </ul>
-      <li> TOOLS & PLATFORMS</li>
-      <ul>
-        <li>GIT</li>
-        <li>GITHUB</li>
-      <li>VS CODE</li>
-      </ul>
-    </ol>
-  </body>
+<head>
+    <title>Radio Buttons and Checkboxes 
+    </title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 20px;
+        }
+
+        fieldset {
+            width: 350px;
+            padding: 15px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: blue;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 8px 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+
+      
+        <fieldset>
+
+            <legend>Student Information</legend>
+
+            <!-- RADIO BUTTONS -->
+            <h3>Select Gender</h3>
+
+            <input type="radio" name="gender" value="Male">
+            Male
+
+            <input type="radio" name="gender" value="Female">
+            Female
+
+            <input type="radio" name="gender" value="Other">
+            Other
+
+            <br><br>
+
+         
+            <h3>Select Hobbies</h3>
+
+            <input type="checkbox" name="hobby" value="Reading">
+            Reading
+
+            <br>
+
+            <input type="checkbox" name="hobby" value="Sports">
+            Sports
+
+            <br>
+
+            <input type="checkbox" name="hobby" value="Music">
+            Music
+
+            <br>
+
+            <input type="checkbox" name="hobby" value="Travel">
+            Travel
+
+            <br><br>
+
+            <button type="button" onclick="showResult()">
+                Submit
+            </button>
+
+        </fieldset>
+
+    </form>
+
+    <h2 id="output"></h2>
+
+    <script>
+
+        function showResult() {
+
+       
+            let genderButtons =
+                document.getElementsByName("gender");
+
+            let selectedGender = "";
+
+        
+            for (let i = 0; i < genderButtons.length; i++) {
+
+                if (genderButtons[i].checked) {
+
+                    selectedGender =
+                        genderButtons[i].value;
+                }
+            }
+
+         
+            let hobbies =
+                document.getElementsByName("hobby");
+
+            let selectedHobbies = [];
+
+           
+            for (let i = 0; i < hobbies.length; i++) {
+
+                if (hobbies[i].checked) {
+
+                    selectedHobbies.push(
+                        hobbies[i].value
+                    );
+                }
+            }
+
+      
+            document.getElementById("output").innerHTML =
+
+                "Selected Gender: " +
+                selectedGender +
+
+                "<br><br>" +
+
+                "Selected Hobbies: " +
+                selectedHobbies.join(", ");
+        }
+
+    </script>
+
+</body>
 </html>
