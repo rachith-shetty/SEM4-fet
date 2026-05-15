@@ -1,0 +1,43 @@
+/* style.css */
+
+body {
+    background-color: #dbeafe;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: darkblue;
+}
+
+.info {
+    text-align: center;
+    font-size: 18px;
+}
+
+h2 {
+    color: darkred;
+    margin-top: 25px;
+}
+
+ul {
+    line-height: 2;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    color: red;
+}
