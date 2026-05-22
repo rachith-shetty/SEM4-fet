@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d2b48c; 
+  margin: 0;
+  padding: 40px;
+}
+
+ol {
+  padding-left: 25px;
+}
+
+li {
+  margin: 12px 0;
+  color: black; 
+  font-size: 18px;
+}
+
+ul {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+ul li {
+  color: black;
+  font-size: 16px;
+}
+
+li:hover {
+  color: #8b4513;
+  cursor: pointer;
+}
+
+button {
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 8px 15px;
+
+  background: #a0522d;  
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #8b4513; /* Darker brown */
+}
